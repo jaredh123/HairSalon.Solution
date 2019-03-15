@@ -18,17 +18,20 @@ A hair salon database that allows the additions and deletions of stylists, clien
 * No known bugs.
 
 ## Specifications
-xxxxx
+Have the database properly saved and the website running. The user is then allowed to click the available buttons and hyperlinks to access and fill in information on the stylists, clients, specialties, and the relationships between these aspects. All pages have a link back to the main home page.
 
 | Behavior | Input | Output |
 |----------|:-----:|:------:|
-| xxxxx | xxxxx | xxxxx |
-| xxxxx | xxxxx | xxxxx |
-| xxxxx | xxxxx | xxxxx |
+| User clicks "View/add stylists and add clients" link. | Click | Page redirect to stylist page to add or clear stylists. |
+| User can then also access and edit stylist info, create clients, or add specialties. | Click/type | stylist info and/or clients, and/or specialties were accessed, created, or edited. |
+| User clicks "View clients" link. | Click | Page redirect to client page to show or clear clients. |
+| User clicks client name if present. | Click | Page redirect to client info page to show info, add stylist, edit client info, or delete client. |
+| User clicks "View specialties" link. | Click | Page redirect to specialties page to show specialties, add specialties, or clear all specialties. |
+| User clicks specialty if present. | Click | Page redirects to page to show stylists that have this specialty, to add stylists to specialty, and to delete specialty. |
 
 ## Setup and Use
 Software Requirements:
-Download .NET Core 1.1.4 SDK and .NET Core Runtime 1.1.2 and install them. Download Mono and install it.
+Download .NET Core 1.1.4 SDK and .NET Core Runtime 1.1.2 and install them. Download Mono and install it. Download MAMP and install it.
 
 * Clone this repository [repo](https://github.com/jaredh123/HairSalon.Solution): "$ git clone https://github.com/jaredh123/HairSalon.Solution "
 * To edit the project, open the project in your preferred text editor.

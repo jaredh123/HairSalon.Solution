@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using WordCounter.Models;
+using HairSalon.Models;
 
-namespace WordCounter.Controllers
+namespace HairSalon.Controllers
 {
   public class HomeController : Controller
   {

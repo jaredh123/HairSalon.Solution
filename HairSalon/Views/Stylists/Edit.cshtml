@@ -1,0 +1,12 @@
+<h1>Hair Salon</h1>
+<h3>Edit</h3>
+<p>Stylist: @Model["stylist"].GetName()</p>
+<form action='/stylists/@Model["stylist"].GetId()' method='post'>
+  <label for='newName'>Stylist name:</label>
+  <input id='newName' name='newName' type='text' required>
+  <label for='newDetails'>Stylist details:</label>
+  <input id='newDetails' name='newDetails' type='text' required>
+  <button type='submit'>submit</button>
+</form>
+<br>
+<a href='/'>Home</a>

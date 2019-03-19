@@ -35,6 +35,22 @@ Download .NET Core 1.1.4 SDK and .NET Core Runtime 1.1.2 and install them. Downl
 
 * Clone this repository [repo](https://github.com/jaredh123/HairSalon.Solution): "$ git clone https://github.com/jaredh123/HairSalon.Solution "
 * To edit the project, open the project in your preferred text editor.
+* Open MAMP (make sure Apache port is 8888 & MySql port is 8889) and start both the Apache serve and the MySql server.
+* !Database must be created first to use webpage!
+* In the Command Prompt or Terminal use the command "mysql -uroot -proot"
+* Use the following SQL commands in MySql to create database:
+* > "CREATE DATABASE hair_salon;"
+* > "USE hair_salon;"
+* > "CREATE TABLE stylists (id serial PRIMARY KEY, name VARCHAR(255));"
+* > "CREATE TABLE clients (id serial PRIMARY KEY, name VARCHAR(255)), stylist_id INT;"
+* > CREATE TABLE specialities (id serial PRIMARY KEY, name VARCHAR(255));
+* > CREATE TABLE specialities_stylists (id serial PRIMARY KEY, speciality_id INT, stylist_id INT;
+* > "CREATE DATABASE hair_salon_test;"
+* > "USE hair_salon_test;"
+* > "CREATE TABLE stylists (id serial PRIMARY KEY, name VARCHAR(255));"
+* > "CREATE TABLE clients (id serial PRIMARY KEY, name VARCHAR(255)), stylist_id INT;"
+* > CREATE TABLE specialities (id serial PRIMARY KEY, name VARCHAR(255));
+* > CREATE TABLE specialities_stylists (id serial PRIMARY KEY, speciality_id INT, stylist_id INT;
 * To run the program, in terminal first navigate to the location of the the HairSalon and HairSalon.Tests directories at the top levels and execute: "$ dotnet restore" in both directories.
 * Open MAMP.
 * Go to "http://localhost:8888/phpMyAdmin/server_import.php"
